@@ -32,26 +32,33 @@
                     <input type="password" id="password-conf" name="password-conf" required>
                     </div>
                     <div class="formGroup" id="radioGroup">
-                        <div class="radioInput">
-                        <input type="radio" id="Male" name="gender" required>
-                        <label for="Male">Male</label>
-                        </div>
-                        <div class="radioInput">
-                        <input type="radio" id="Female" name="gender" required>
-                        <label for="Female">Female</label>
-                        </div>
-                        <div class="radioInput">
-                        <input type="radio" id="Prefer not to say" name="gender" required>
-                        <label for="Prefer not to say">Prefer not to say</label>
-                        </div>
-                        <div class="radioInput">
-                        <input type="radio" id="Other" name="gender" required>
-                        <label for="Other">Other</label>
-                        </div>
+                        <label for="Male">
+                            <input type="radio" id="Male" name="gender" required checked="checked">
+                            <span class="radiobutton"></span>
+                            Male
+                        </label>
+                        <label for="Female">
+                            <input type="radio" id="Female" name="gender" required>
+                            <span class="radiobutton"></span>
+                            Female
+                        </label>
+                        <label for="Prefer not to say">
+                            <input type="radio" id="Prefer not to say" name="gender" required>
+                            <span class="radiobutton"></span>
+                            Prefer not to say
+                        </label>
+                        <label for="Other">
+                            <input type="radio" id="Other" name="gender" required>
+                            <span class="radiobutton"></span>
+                            Other
+                        </label>
                     </div>
                     <div class="formGroup" id="checkInput">
-                        <input type="checkbox" id="agree" name="agree" required>
-                        <label for="agree">I agree to the Terms of Service, the collection and use of personal information, and consent to marketing activities.</label>
+                        <label for="agree">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <span class="checkmark"></span>
+                            I agree to the Terms of Service, the collection and use of personal information, and consent to marketing activities.
+                        </label>
                     </div>
                     <button class="btn" type="submit">Sign Up</button>
                 </form>
