@@ -1,8 +1,4 @@
-/*reference: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-
 
 * {
     margin: 0;
@@ -18,10 +14,8 @@ body {
     color: #797979;
 }
 
-
 .wrap {
     padding: 100px;
-    flex-shrink: 0;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
@@ -62,17 +56,14 @@ body {
     flex-direction: column;
 }
 
-.formGroup input[type="text"], .formGroup input[type="password"] {
+.formGroup input[type="text"],
+.formGroup input[type="password"] {
     width: 100%;
     padding: 8px;
     background: transparent;
     border: none;
     border-bottom: 1px solid #CFCFCF;
     margin-top: 20px;
-}
-
-.formGroup input[type="text"]:focus .formGroup input[type="password"]:focus{
-    border-bottom: 1px solid #0068FF;
 }
 
 #radioGroup {
@@ -82,73 +73,53 @@ body {
     padding-top: 20px;
 }
 
-
 #radioGroup label {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
-/* Hide the browser's default radio button */
 #radioGroup label input {
     cursor: pointer;
     opacity: 0;
     height: 0;
     width: 0;
-    z-index: 3;
+    z-index: -1;
 }
 
-/* Create a custom radio button */
 #radioGroup label .radiobutton {
     height: 20px;
     width: 20px;
     background-color: #EBEBEB;
     border-radius: 50%;
     margin-right: 10px;
-    /*position: absolute;*/
-    z-index: 2;
-    stroke-width: 1px;
-    stroke: #D2D2D2;
 }
 
-/* On mouse-over, add a grey background color */
-#radioGroup label:hover input ~ .radiobutton {
+#radioGroup label:hover .radiobutton {
     background-color: #D2D2D2;
 }
 
-/* When the checkbox is checked, add a blue background */
 #radioGroup label input:checked ~ .radiobutton {
     background-color: #0068FF;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 #radioGroup label .radiobutton:after {
     content: "";
     display: none;
 }
 
-/* Show the checkmark when checked */
 #radioGroup label input:checked ~ .radiobutton:after {
     display: block;
-}
-
-/* Style the checkmark/indicator */
-#radioGroup label .radiobutton:after {
     width: 10px;
     height: 10px;
-    margin: 5px 2px 2px 5px;
+    margin: 5px;
     border-radius: 50%;
     background: #FFF;
-    z-index: 1;
 }
 
-#checkInput label{
+#checkInput label {
     display: flex;
     margin: 20px 0;
 }
@@ -156,10 +127,8 @@ body {
 #checkInput input {
     width: 20px;
     height: 20px;
-    box-sizing: border-box;
     margin-right: 15px;
 }
-
 
 .btn {
     width: 100%;
@@ -172,14 +141,12 @@ body {
     font-weight: 400;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #0068FF;
     color: #FFF;
 }
 
-
 @media (max-width: 600px) {
-
     body {
         font-size: 12px;
     }
@@ -194,10 +161,7 @@ body {
     }
 
     .cardBox .title h2 {
-        color: #0068FF;
         font-size: 25px;
-        font-weight: 700;
-        line-height: normal;
         margin-bottom: 30px;
     }
 
@@ -205,9 +169,10 @@ body {
         display: none;
     }
 
-    .formGroup input[type="text"], .formGroup input[type="password"] {
-        margin-top: 0;
+    .formGroup input[type="text"],
+    .formGroup input[type="password"] {
         padding: 2px;
+        margin-top: 3px;
     }
 
     #radioGroup {
@@ -216,13 +181,14 @@ body {
     }
 
     #radioGroup label {
-        margin-top: 0;
         margin-bottom: 5px;
     }
-    #checkInput{
+
+    #checkInput {
         margin-bottom: 0px;
     }
-    #checkInput label{
+
+    #checkInput label {
         margin-top: 0;
     }
 
@@ -230,5 +196,4 @@ body {
         height: 45px;
         font-size: 15px;
     }
-
 }
