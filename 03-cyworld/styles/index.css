@@ -115,7 +115,6 @@
 .wrapper_right {
     width: 524px;
     height: 472px;
-    border: red 1px solid;
     padding: 7px 0 0 3px;
 }
 
@@ -125,7 +124,6 @@
     justify-content: space-between;
     align-items: center;
     color: #55B2D4;
-    border: red 1px solid;
     padding: 0 10px;
 }
 

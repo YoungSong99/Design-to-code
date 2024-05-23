@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Game</title>
     <link href="styles/game.css" rel="stylesheet">
+    <script src="styles/game.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,9 +21,9 @@
             <div class="game_subtitle">Word From: <span id="word">Apple</span></div>
             <div class="word_text">
                 <input class="textbox" id="myword" placeholder="Enter the word">
-                <button class="search">Enter</button>
+                <button class="search" onclick="word_game()">Enter</button>
             </div>
-            <div id="result" class="word_result">Result!</div>
+            <div id="word_result" class="word_result">Result!</div>
         </div>
         <div class="game_container">
             <img class="lotto_img" src="images/lotto.png" alt="">
