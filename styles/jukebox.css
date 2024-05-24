@@ -73,6 +73,11 @@ html, body {
     padding-top: 12px;
 }
 
+.album_img_container img {
+    width: 120px;
+    height: 120px;
+}
+
 .album_img_container .album_title {
     color: #0F465E;
     text-align: center;
@@ -95,6 +100,7 @@ table {
     margin: 10px 0;
     width: 100%;
     border-collapse: collapse;
+    border-spacing: 0;
 }
 
 th, td {
@@ -110,9 +116,22 @@ table label input{
     border-radius: 0;
 }
 
+.music_list thead th:nth-child(1){
+    width: 5%;
+}
 
-.music_list thead th:nth-child(3), th:nth-child(4) {
+.music_list thead th:nth-child(2){
+    width: 10%;
+}
+
+.music_list thead th:nth-child(3) {
     text-align: left;
+    width: 45%;
+}
+
+.music_list thead th:nth-child(4) {
+    text-align: left;
+    width: 30%;
 }
 
 .music_list thead th {
@@ -126,8 +145,23 @@ table label input{
     line-height: normal;
 }
 
-.music_list tbody td:nth-child(1), td:nth-child(2) {
+.music_list tbody td:nth-child(1){
+    width: 5%;
     text-align: center;
+}
+
+.music_list tbody td:nth-child(2) {
+    width: 10%;
+    text-align: center;
+}
+
+
+.music_list tbody td:nth-child(3) {
+    width: 45%;
+}
+
+.music_list tbody td:nth-child(4) {
+    width: 30%;
 }
 
 .music_list tbody td {
@@ -135,6 +169,6 @@ table label input{
     color: #0F465E;
     font-size: 10px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 }

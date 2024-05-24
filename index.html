@@ -6,6 +6,7 @@
     <title>Young's Cyworld</title>
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/c87b7e4ea7.js" crossorigin="anonymous"></script>
+    <script src="styles/index.js"></script>
 </head>
 <body>
     <div class="background">
@@ -24,7 +25,6 @@
                     <div class="wrapper_left_body">
                         <div class="left_body_header">
                             <div class="left_body_header_pic">
-                                <img src="images/min.jpg" alt="profile_pic">
                             </div>
                             <div class="left_body_header_line"></div>
                         </div>
@@ -55,8 +55,13 @@
                         <div class="right_header_setting"><span class="bitFont">PRIVACY SETTING</span></div>
                     </div>
                     <div class="wrapper_right_body">
-                        <iframe src="./jukebox.html"></iframe>
+                        <iframe id="contentFrame" src="./home.html"></iframe>
                     </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation_item" id="menuHome" onclick="menuHome()">Home</div>
+                    <div class="navigation_item" id="menuJukebox" onclick="menuJukebox()">Jukebox</div>
+                    <div class="navigation_item" id="menuGame" onclick="menuGame()">Game</div>
                 </div>
             </div>
         </div>
